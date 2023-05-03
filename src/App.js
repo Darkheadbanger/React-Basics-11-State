@@ -10,7 +10,6 @@ export default function SignupForm() {
     e.preventDefault();
     setEmail('');
     setName('');
-    alert('Name & Email added');
     console.log('nam: ${name} & email: ${email} here');
     if (name === '' || email === '') return false;
     setMessage([...message, { email, name }]);
