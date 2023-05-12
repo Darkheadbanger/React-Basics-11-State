@@ -2,16 +2,16 @@ import React from 'react';
 
 export default function SignupForm() {
   // states here
-  const [name, setName] = React.useState('');
-  const [email, setEmail] = React.useState('');
+  const [name, setName] = React.useState(``);
+  const [email, setEmail] = React.useState(``);
   const [message, setMessage] = React.useState([]);
 
   const display = (e) => {
     e.preventDefault();
-    setEmail('');
-    setName('');
+    setEmail(``);
+    setName(``);
     console.log('nam: ${name} & email: ${email} here');
-    if (name === '' || email === '') return false;
+    if (name === `` || email === ``) return false;
     setMessage([...message, { email, name }]);
   };
 
